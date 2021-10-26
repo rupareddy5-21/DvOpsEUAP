@@ -17,8 +17,8 @@
   <script>
     (async function () {
       let response = await fetch(`api/HttpExample`);
-      let message = await response.json();
-      document.querySelector("#message").innerHTML = message.text
+      let message = await response.text();
+      document.querySelector("#message").innerHTML = message
     })();
   </script>
 </html>
